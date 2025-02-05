@@ -1,3 +1,5 @@
+// Phase 1: Variable and Data Initialization
+
 // intro and outro
 let intro = true;
 let outro = false;
@@ -99,6 +101,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
+  frameRate(144);
   capture = createCapture(VIDEO);
   capture.size(width, height);
   capture.hide();
@@ -644,7 +647,7 @@ class SugarCube {
     fill("#d9d7d0");
     textSize(40);
     textAlign(CENTER, CENTER);
-    text(str(this.year).slice(-2), 0, -5);  // Posunuto o 5 pixelů nahoru
+    text(str(this.year).slice(-2), 0, -5);
     pop();
   }
 }
